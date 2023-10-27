@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My_boi</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setname(){
+            const name = document.getElementById("user_name")
+            const profilename = document.getElementById("profile")
+            profilename.innerText = name.value
+        }
+        function setimage(){
+            const image = document.getElementById("image_url")
+            const now_image = document.getElementById("profile_image")
+            now_image.style.backgroundImage = "url("+image.value+")"
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="profile_image"class="parent">
+            <div class="child">1</div>
+        </div>
+        <h3 id="profile">
+            <a href="https://www.facebook.com/Aigkarat.Artapiyatham" class="on_hover">Aigkarat</a>
+        </h3>
+        <div class="row">
+            <p>User name</p>
+            <input id="user_name" type="text">
+            <button onclick="setname()">set</button>
+        </div>
+        <div class="row">
+            <p>image</p>
+            <input id="image_url" type="text">
+            <button onclick="setimage()">set</button>
+        </div>
+        <div class="gallery">
+            <div id="extend-col" class="image" style="background-image: url(./image/ERA.jpg);"></div>
+            <div id="extend-row" class="image" style="background-image: url(./image/NEM.jpg);"></div>
+            <div class="image" style="background-image: url(./image/NOTDEATH.png);"></div>
+            <div class="image" style="background-image: url(./image/REB.jpg);"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-col" class="image"></div>
+        </div>
+    </main>
+</body>
+</html>

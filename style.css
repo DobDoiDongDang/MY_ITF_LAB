@@ -1,0 +1,72 @@
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 500;
+    height: 500;
+    border: 2px aqua solid;
+}
+.parent{
+    background-image: url(./image/BER.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 5px black solid;
+    border-radius: 99%;
+}
+.child{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: red;
+    top: 19%;
+    right: 43%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 5px black solid;
+    border-radius: 99%;
+}
+.row{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.gallery .image{
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+.gallery{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#extend-col{
+    width: 550px;
+    grid-column: span 2 / span 2;
+}
+#extend-row{
+    height: 550px;
+    grid-row: span 2 / span 2;
+}
+
+
+body{
+    background-color: aqua;
+}
+
+.on_hover {
+    text-decoration: none;
+    color: black;
+}
+.on_hover:hover{
+    text-decoration: underline;
+    color: red;
+}
